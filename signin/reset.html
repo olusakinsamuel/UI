@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+
+    <div class="top-nav clearfix" style="background-color: darkred;">
+        <a href="../landing page/index.html" class="logo">
+        <img src="logo.jpg" alt="logo"/><div class="text" style="display: inline; font-size: 24px;">Property Pro</div>
+      </a>  
+    
+    </div>
+  
+  <div class="reset">
+    <form>
+      <h2 align="center" style="color: #fff;">Rest Password</h2>
+      <input type="password" name="username" placeholder="Old Password"/> <br><br>
+      <input type="password" name="username" placeholder="New Password"/> <br><br>
+      <input type="password" name="username" placeholder="Confirm New Password"/> <br><br>
+      <input type="button" value="Save" onclick="myFunction()"/> <br><br>
+      <a href="signin.html" style="text-decoration: none;">Go Back</a> <br><br>
+      <div id="msg">Your password changed successfully
+      </div>
+
+      <script>
+        function myFunction(){
+          var x= document.getElementById("msg");
+          x.className= "show";
+          setTimeout(function(){ x.className = x.className.replace("show", "");}, 3000);
+        }
+      </script>
+    </form>
+
+  </div>
+</body>
+</html>

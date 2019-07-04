@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="forgot.css">
+</head>
+<body>
+
+    <div class="top-nav clearfix" style="background-color: darkred;">
+        <a href="../landing page/index.html" class="logo">
+        <img src="logo.jpg" alt="logo"/><div class="text" style="display: inline; font-size: 24px;">Property Pro</div>
+      </a>  
+    
+    </div>
+
+  <div class="forget">
+    <form>
+      <h2 align="center" style="color: #fff;">Forget Password</h2>
+      <h5 style="font-size: 14px; color: yellow;">Enter the Email you used to register. We send a link to your email to reset your password</h5>
+      <input type="text" name="username" placeholder="Enter your email"/><br><br>
+      <input type="button" value="Send" onclick="myFunction()"/><br><br>
+      <a href="signin.html" style="text-decoration: none;">Go back</a><br><br>
+      <div id="snackbar">Link Sent to your email successfully!!!</div>
+      <script>
+          function myFunction(){
+            var x= document.getElementById("snackbar");
+            x.className= "show";
+            setTimeout(function(){ x.className = x.className.replace("show", "");}, 3000);
+          }
+        </script>
+    </form>
+
+  </div>
+  
+</body>
+</html>
