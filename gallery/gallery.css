@@ -1,0 +1,92 @@
+body{
+  font-family: sans-serif; 
+  overflow-x: hidden;
+}
+.top-nav{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  z-index: 200;
+}
+.top-nav.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo:link{
+  position: relative;
+  color: #ccc;
+  display: inline-block;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  
+}
+.logo:visited{
+  color: #ccc;
+}
+.logo:hover{
+  background-color: brown;
+}
+.logo img{
+  position: relative;
+  padding: 12px 18px;
+  width: 100px;
+  vertical-align: middle;
+}
+h1{
+  text-align: center;
+  color: forestgreen;
+  margin: 30px 0 50px;
+}
+.gallery{
+  margin: 10px 50px;
+}
+.gallery img{
+  width: 230px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+  border-radius: 5px;
+}
+.gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+[data-title] :hover :after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+[data-title]:after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -1.6em;
+  left: 100%;
+  padding: 4px 4px 4px 8px;
+  color: #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f8f8f8), color-stop(1, #cccccc));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #cccccc);
+  background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #cccccc);
+  background-image: -o-linear-gradient(top, #f8f8f8, #cccccc);
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+}
+[data-title]:hover::after{
+  position: relative;
+  bottom: -10px;
+}
