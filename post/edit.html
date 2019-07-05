@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Property Pro</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="select.css">
+</head>
+<body>
+    <div class="top-nav clearfix" style="background-color: darkred;">
+        <a href="../landing page/index.html" class="logo">
+        <img src="logo.jpg" alt="logo"/><div class="text" style="display: inline; font-size: 24px;">Property Pro</div>
+      </a>  
+       <a href="../landing page/index.html"> <div class="signout" style="color: white; font-weight:30px; float: right; font-size: 36px;margin-top: 30px; margin-right: 20px;">sign out</div></a>
+    
+    </div>
+
+    <div class="row">
+        <div class="column1">
+            <button type="submit" class="markbtn">Sold</button>
+            <button type="submit" class="markbtn2">Delete</button>
+            <h4>Property Details</h4>
+            <img src="a1br apart1.jpg" alt="" style="width:320px;height:auto;max-width: 300px;" > 
+            <table>
+                <tr>
+                <td>Owner</td>
+                <td>David James</td>        
+                </tr>
+
+                <tr>
+                <td>Price</td>
+                <td>N500,000/yr</td>
+            
+                </tr>
+                <tr>
+                <td>Location</td>
+                <td>Lagos</td>
+                </tr>
+                
+                <tr>
+                <td>Type</td>
+                <td>3-bedroom</td>
+                </tr>
+                <tr>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class = "column2">
+            <form action="#"  class ="edit-form" style="border:1px solid #ccc">
+                    <h4>Edit Details of Property</h4>                
+                    <label for="owner_name"><b>Owners Name</b></label>
+                    <input type="text" placeholder="Enter your name" name="owner_name" required>
+
+                    <label for="price"><b>Price</b></label>
+                    <input type="number" placeholder="Enter price" name="price" required>
+
+                    <label for="State"><b>State</b></label>
+                    <input type="text" placeholder="Location" name="State" required>
+
+                    <label for="type"><b>Type</b></label>
+                    <input type="text" placeholder="Property type" name="State" required>
+
+                    <label for="image_url"><b>Property ID</b></label>
+                    <input type="text" required>
+                
+                
+                        <button type="submit" class="formbtn" style="background-color:red;">SAVE</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

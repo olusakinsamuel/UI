@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="select.css">
+</head>
+<body>
+
+  <div class="top-nav clearfix" style="background-color: darkred;">
+    <a href="../landing page/index.html" class="logo">
+    <img src="logo.jpg" alt="logo"/><div class="text" style="display: inline; font-size: 24px;">Property Pro</div>
+  </a>  
+   <a href="../landing page/index.html"> <div class="signout" style="color: white; font-weight:30px; float: right; font-size: 36px;margin-top: 30px; margin-right: 20px;">sign out</div></a>
+
+</div>
+
+<form action="#" style="border:1px solid #ccc">
+    <div class="form-box">
+      <h4>New Property Advert</h4>
+  
+      <label for="owner_name"><b>Owners Name</b></label>
+      <input type="text" placeholder="Enter your name" name="owner_name" required>
+
+      <label for="price"><b>Price</b></label>
+      <input type="number" placeholder="Enter price" name="price" required>
+
+      <label for="State"><b>State</b></label>
+      <input type="text" placeholder="Enter State where property located" name="State" required>
+
+      <label for="type"><b>Type</b></label>
+      <input type="text" placeholder="Enter type of property" name="State" required>
+
+      <div>
+          <input class="file-upload-input" type="file"  onchange="readURL(this);" accept="image/*"/>
+          <img class="file-upload-image" src="#" alt="your image"/></div><br><br>
+  
+  
+        <button type="submit" class="formbtn" style="background-color: red;">Post Advert</button>
+    </div>
+</form>
+</body>
+</html>
